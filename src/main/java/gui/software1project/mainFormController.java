@@ -56,11 +56,23 @@ public class mainFormController implements Initializable {
     }
 
     public void modifyPartButton(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("modify-part-form-inhouse.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        try{
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("modify-part-form-inhouse.fxml"));
+            loader.load();
+
+            modifyPartController screen = loader.getController();
+            screen.resultsUpdate(partList.getSelectionModel().getSelectedIndex(), partList.getSelectionModel().getSelectedItem());
+
+            stage = (Stage) ((Button)event.getSource()).getScene().getWindow();
+            Parent scene = loader.getRoot();
+            stage.setScene(new Scene(scene));
+            stage.show();
+        }
+        catch(NullPointerException e){
+            e.printStackTrace();
+        }
+
     }
 
     public void searchBarPart(ActionEvent event) throws IOException{

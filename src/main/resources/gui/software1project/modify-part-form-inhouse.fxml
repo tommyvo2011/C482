@@ -21,13 +21,13 @@
         <Label layoutX="101.0" layoutY="306.0" text="Max:" />
         <Label layoutX="99.0" layoutY="341.0" text="Company Name:" />
         <Label layoutX="346.0" layoutY="306.0" text="Min:" />
-        <TextField layoutX="195.0" layoutY="161.0" prefHeight="23.0" prefWidth="143.0" />
-        <TextField layoutX="195.0" layoutY="195.0" prefHeight="23.0" prefWidth="143.0" />
-        <TextField layoutX="195.0" layoutY="230.0" prefHeight="23.0" prefWidth="143.0" />
-        <TextField layoutX="195.0" layoutY="266.0" prefHeight="23.0" prefWidth="143.0" />
-        <TextField layoutX="195.0" layoutY="302.0" prefHeight="23.0" prefWidth="143.0" />
-        <TextField layoutX="195.0" layoutY="337.0" prefHeight="23.0" prefWidth="143.0" />
-        <TextField layoutX="387.0" layoutY="302.0" prefHeight="23.0" prefWidth="143.0" />
+        <TextField fx:id="textFieldModPartId" layoutX="195.0" layoutY="161.0" prefHeight="23.0" prefWidth="143.0" />
+        <TextField fx:id="textFieldModPartName" layoutX="195.0" layoutY="195.0" prefHeight="23.0" prefWidth="143.0" />
+        <TextField fx:id="textFieldModPartInventory" layoutX="195.0" layoutY="230.0" prefHeight="23.0" prefWidth="143.0" />
+        <TextField fx:id="textFieldModPartPrice" layoutX="195.0" layoutY="266.0" prefHeight="23.0" prefWidth="143.0" />
+        <TextField fx:id="textFieldModPartMax" layoutX="195.0" layoutY="302.0" prefHeight="23.0" prefWidth="143.0" />
+        <TextField fx:id="textFieldModPartCompanyName" layoutX="195.0" layoutY="337.0" prefHeight="23.0" prefWidth="143.0" />
+        <TextField fx:id="textFieldModPartMin" layoutX="387.0" layoutY="302.0" prefHeight="23.0" prefWidth="143.0" />
         <RadioButton layoutX="161.0" layoutY="97.0" mnemonicParsing="false" selected="true" text="In-House" />
         <RadioButton layoutX="271.0" layoutY="97.0" mnemonicParsing="false" text="Outsourced" />
         <Button layoutX="407.0" layoutY="478.0" mnemonicParsing="false" text="Save" />

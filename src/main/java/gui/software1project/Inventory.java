@@ -38,11 +38,11 @@ public class Inventory {
         }
         return searchedPart;
     }
-/*
-    public void updatePart(int index, selectedPart) {
+
+    public void updatePart(int index, Part selectedPart) {
 
     }
-
+/*
     public boolean deletePart(Part selectedPart) {
 
     }
